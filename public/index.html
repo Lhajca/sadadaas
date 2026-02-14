@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSNM — Club Surf & Bodyboard</title>
+  <meta name="description" content="Club de surf en bord de mer : cours, location, communauté et inscriptions en ligne."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Surf-mag vibe: bold display + clean text -->
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+
+<body>
+  <!-- Top ribbon -->
+  <div class="ribbon" role="note" aria-label="Informations">
+    <div class="ribbon__inner">
+      <span class="dot"></span>
+      <span>Océan • Cours débutant → avancé • Bodyboard • Location • Ambiance famille</span>
+      <span class="dot"></span>
+      <span class="marquee" aria-hidden="true">
+        <span>RÉSERVATIONS EN LIGNE —</span><span>RÉSERVATIONS EN LIGNE —</span><span>RÉSERVATIONS EN LIGNE —</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="Retour accueil">
+        <div class="brand">
+        <img src="assets/logo.png" alt="CSNM Surf Club Logo" class="logo">
+</div>
+
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+        <span class="sr">Menu</span>
+      </button>
+
+      <div class="nav__links" id="navLinks">
+        <a href="#ecole">École</a>
+        <a href="#reserv">Réserver</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#infos">Infos</a>
+        <a href="#contact">Contact</a>
+        <a class="pill" href="#reserv">Inscription</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero__bg">
+        <div class="grain"></div>
+        <div class="sun"></div>
+        <svg class="wave" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,120 C150,180 300,60 450,120 C600,180 750,60 900,120 C1050,180 1200,60 1200,60 L1200,200 L0,200 Z"></path>
+        </svg>
+        <svg class="wave wave--2" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,80 C160,140 320,20 480,80 C640,140 800,20 960,80 C1120,140 1200,40 1200,40 L1200,200 L0,200 Z"></path>
+        </svg>
+      </div>
+
+      <div class="hero__content">
+        <p class="badge">
+          <span class="badge__chip">Club</span>
+          <span class="badge__chip">Surf & Bodyboard</span>
+          <span class="badge__chip">Côte marocaine</span>
+        </p>
+
+        <h1>
+          Le surf, mais <span class="scribble">avec</span> du soleil,
+          des vagues et une vraie <span class="underline">team</span>.
+        </h1>
+
+        <p class="lead">
+          CSNM, c’est une école + un club. Tu viens pour apprendre, tu restes pour l’ambiance.
+          Réserve ton créneau, on te répond sur Gmail.
+        </p>
+
+        <div class="cta">
+          <a class="btn btn--primary" href="#reserv">Réserver un cours</a>
+          <a class="btn btn--ghost" href="#galerie">Voir l’énergie du club</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="stat__n">+4</span>
+            <span class="stat__t">niveaux (Débutant → Avancé)</span>
+          </div>
+          <div class="stat">
+            <span class="stat__n">2h</span>
+            <span class="stat__t">session type (échauff. + pratique)</span>
+          </div>
+          <div class="stat">
+            <span class="stat__n">🌊</span>
+            <span class="stat__t">matériel inclus selon formule</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__collage" aria-label="Photos du club">
+        <figure class="polaroid p1">
+          <img src="/assets/photo_1.webp" alt="DJ set au coucher du soleil au club de surf" loading="lazy">
+          <figcaption>Sunset vibes</figcaption>
+        </figure>
+        <figure class="polaroid p2">
+          <img src="/assets/photo_3.webp" alt="Entraînement surf sur la plage avec planches" loading="lazy">
+          <figcaption>Échauffement plage</figcaption>
+        </figure>
+        <figure class="polaroid p3">
+          <img src="/assets/photo_6.webp" alt="Cours dans l'eau avec moniteur" loading="lazy">
+          <figcaption>Premières vagues</figcaption>
+        </figure>
+        <div class="sticker s1" aria-hidden="true">NO BAD DAYS</div>
+        <div class="sticker s2" aria-hidden="true">SEA SALT</div>
+      </div>
+    </section>
+
+    <div class="separator" aria-hidden="true">
+      <svg viewBox="0 0 1440 110" preserveAspectRatio="none">
+        <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,110 L0,110 Z"></path>
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <!-- École -->
+    <section class="section" id="ecole">
+      <div class="container">
+        <div class="section__head">
+          <h2>École de surf</h2>
+          <p>Des cours clairs, une progression rapide, et du fun — même si tu n’as jamais touché une planche.</p>
+        </div>
+
+        <div class="grid cards">
+          <article class="card">
+            <h3>Débutant</h3>
+            <p>Prise de vague, sécurité, position, pop-up. Objectif : sortir avec le sourire et les bases solides.</p>
+            <ul class="check">
+              <li>Brief sécurité + lecture de spot</li>
+              <li>Échauffement & technique</li>
+              <li>Accompagnement dans l’eau</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Intermédiaire</h3>
+            <p>Amélioration du take-off, trajectoires, timing. Objectif : plus de vagues, plus propres.</p>
+            <ul class="check">
+              <li>Réglages posture & regard</li>
+              <li>Choix des vagues</li>
+              <li>Feedback rapide</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Avancé</h3>
+            <p>Travail sur manœuvres, vitesse, lecture et flow. Objectif : surfer plus fort, plus longtemps.</p>
+            <ul class="check">
+              <li>Exercices ciblés</li>
+              <li>Analyse vidéo (option)</li>
+              <li>Plan de progression</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="banner">
+          <div class="banner__txt">
+            <h3>Matériel & ambiance</h3>
+            <p>Combinaison + planche selon formule. Vestiaire, eau, et une vibe club au bord de l’océan.</p>
+          </div>
+          <a class="btn btn--primary" href="#reserv">Je m’inscris</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Réservation -->
+    <section class="section section--foam" id="reserv">
+      <div class="container">
+        <div class="section__head">
+          <h2>Réserver / Inscription</h2>
+          <p>Tu remplis le formulaire. On reçoit tout par email. Ensuite on te confirme sur Gmail.</p>
+        </div>
+
+        <div class="grid reserv">
+          <form class="form card card--form" id="reservationForm" autocomplete="on">
+            <div class="form__row">
+              <label>
+                <span>Nom complet</span>
+                <input name="name" required placeholder="Ex : Yassine El..." />
+              </label>
+              <label>
+                <span>Téléphone</span>
+                <input name="phone" required placeholder="Ex : +212 6..." />
+              </label>
+            </div>
+
+            <div class="form__row">
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" required placeholder="Ex : you@gmail.com" />
+              </label>
+              <label>
+                <span>Niveau</span>
+                <select name="level" required>
+                  <option value="" disabled selected>Choisir</option>
+                  <option>Débutant</option>
+                  <option>Intermédiaire</option>
+                  <option>Avancé</option>
+                  <option>Bodyboard</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="form__row">
+              <label>
+                <span>Date souhaitée</span>
+                <input type="date" name="date" required />
+              </label>
+              <label>
+                <span>Heure</span>
+                <select name="time" required>
+                  <option value="" disabled selected>Choisir</option>
+                  <option>08:00</option>
+                  <option>10:00</option>
+                  <option>12:00</option>
+                  <option>14:00</option>
+                  <option>16:00</option>
+                  <option>18:00</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="form__full">
+              <span>Formule</span>
+              <div class="chips">
+                <label class="chip">
+                  <input type="radio" name="pack" value="Cours 1 session" checked>
+                  <span>Cours • 1 session</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="pack" value="Pack 4 sessions">
+                  <span>Pack • 4 sessions</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="pack" value="Pack 8 sessions">
+                  <span>Pack • 8 sessions</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="pack" value="Location matériel">
+                  <span>Location matériel</span>
+                </label>
+              </div>
+            </label>
+
+            <label class="form__full">
+              <span>Message (option)</span>
+              <textarea name="message" rows="4" placeholder="Ex : je viens avec 2 amis / taille combinaison / questions..."></textarea>
+            </label>
+
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">Envoyer la demande</button>
+              <p class="hint">On répond vite. Pense à vérifier tes spams si besoin.</p>
+            </div>
+
+            <div class="toast" id="toast" role="status" aria-live="polite"></div>
+          </form>
+
+          <aside class="side">
+            <div class="card note">
+              <h3>Ce que tu reçois</h3>
+              <ul class="check">
+                <li>Confirmation par email</li>
+                <li>Lieu + point de rendez-vous</li>
+                <li>Conseils météo / tenue</li>
+              </ul>
+            </div>
+
+            <div class="card timetable">
+              <h3>Créneaux (exemple)</h3>
+              <div class="slots">
+                <div class="slot"><span>Matin</span><strong>08:00 • 10:00 • 12:00</strong></div>
+                <div class="slot"><span>Après-midi</span><strong>14:00 • 16:00 • 18:00</strong></div>
+              </div>
+              <p class="mini">* Les horaires peuvent varier selon les conditions de mer.</p>
+            </div>
+
+            <div class="card card--photo">
+              <img src="/assets/photo_1.webp" alt="Surfeur avec planche devant un mur coloré du club" loading="lazy">
+              <div class="tag">Club life</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="separator separator--flip" aria-hidden="true">
+        <svg viewBox="0 0 1440 110" preserveAspectRatio="none">
+          <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,110 L0,110 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Galerie -->
+    <section class="section" id="galerie">
+      <div class="container">
+        <div class="section__head">
+          <h2>Galerie</h2>
+          <p>Un club, c’est des sessions… et des moments. Voilà l’énergie.</p>
+        </div>
+
+        <div class="masonry">
+          <img src="/assets/photo_2.webp" alt="Logo du club en cercle" loading="lazy">
+          <img src="/assets/photo_4.webp" alt="Photo de groupe au club" loading="lazy">
+          <img src="/assets/photo_3.webp" alt="Entraînement de surf sur la plage" loading="lazy">
+          <img src="/assets/photo_6.webp" alt="Cours dans l'eau avec des planches" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Infos -->
+    <section class="section section--sand" id="infos">
+      <div class="container">
+        <div class="section__head">
+          <h2>Infos rapides</h2>
+          <p>Tout simple, tout clair. Tu viens, tu surfes.</p>
+        </div>
+
+        <div class="grid info">
+          <div class="card">
+            <h3>À prendre</h3>
+            <p>Serviette, eau, crème solaire. Et une bonne humeur obligatoire 🙂</p>
+          </div>
+          <div class="card">
+            <h3>Âge</h3>
+            <p>Enfants, ados, adultes — on adapte le cours et le matériel.</p>
+          </div>
+          <div class="card">
+            <h3>Sécurité</h3>
+            <p>Brief complet, zone encadrée, moniteurs. La base avant tout.</p>
+          </div>
+          <div class="card">
+            <h3>Météo</h3>
+            <p>On choisit le meilleur spot et le bon timing selon la mer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p>Tu peux aussi nous écrire directement. Sinon, le formulaire fait tout.</p>
+        </div>
+
+        <div class="grid contact">
+                  <div class="card">
+          <h3>Téléphone</h3>
+
+          <a 
+            href="tel:+212635503322"
+            class="phone-btn"
+          >
+            📞 Appeler le club
+          </a>
+
+          <p class="mini">Disponible tous les jours 🤙</p>
+        </div>
+
+
+
+          <div class="card">
+          <h3>Email</h3>
+
+             <a 
+               href="mailto:almahdimezrari5S@gmail.com"
+                class="email-btn"
+  >
+                    ✉️ Envoyer un email
+                  </a>
+
+                  <p class="mini">On te répond rapidement 🤙</p>
+                </div>
+
+          <div class="card">
+          <h3>Localisation</h3>
+
+            <a 
+             href="https://maps.google.com/?q=CSNM+Surf+Club+Casablanca"
+            target="_blank"
+            class="map-btn"
+  >
+           📍 Voir sur Google Maps
+            </a>
+
+  <p class="mini">Clique pour ouvrir l’itinéraire.</p>
+</div>
+
+        </div>
+
+        <footer class="footer">
+          <div class="footer__left">
+        <a class="brand" href="#top" aria-label="Retour accueil">
+        <div class="brand">
+        <img src="assets/logo.png" alt="CSNM Surf Club Logo" class="logo">            <span>© <span id="year"></span> • Club Surf Multi Sport • Made for the sea</span>
+          </div>
+          <div class="footer__right">
+            <a href="#top">Haut ↑</a>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
